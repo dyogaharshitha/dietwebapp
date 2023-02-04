@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day diet</title>
+    <script src="C:\Users\Harshitha\Desktop\vscodePrj\jquery\jquery-3.6.0.min.js"></script>
+    <style>
+        body{width: 90%;}
+        div{  margin: 0px; border: solid; border-width:0.5px; }
+        .container{ display: flex; }
+        .element{width: 100%; }
+    </style>
+</head>
+<body>
+    <h1>Today diet</h1>
+    <div class="container">
+    <div class="element"> ceral1: <p id="cereal1"> </p> {{cereal1}}</div>
+    <div class="element"> ceral1 qty: <p id="cereal1qty"> {{cereal1qty}} </p> </div>
+    <div class="element"> curry1: <p id="curry1"> </p> {{diet}} </div>
+    <div class="element"> curry1 qty: <p id="curry1qty"> </p> </div>
+    <div class="element"> ceral2: <p id="cereal2"> </p> </div>
+    <div class="element"> ceral2 qty: <p id="cereal2qty"> </p> </div>
+    <div class="element"> curry2: <p id="curry2"> </p> </div>
+    <div class="element"> curry2 qty: <p id="curry2qty"> </p> </div>
+    <div class="element"> ceral3: <p id="cereal3"> </p> </div>
+    <div class="element"> ceral3 qty: <p id="cereal3qty"> </p> </div>
+    <div class="element"> curry3: <p id="curry3"> </p> </div>
+    <div class="element"> curry3 qty: <p id="curry3qty"> </p> </div>
+    <div class="element"> milk qty: <p id="milkqty"> </p> </div>
+    <div class="element"> curd qty: <p id="curdqty"> </p> </div>
+    </div>
+
+    <button onclick="getdiet()"> Get meal plan</button>
+    <form method="post">
+        <button type="submit">submit</button>
+    </form>
+
+</body>
+</html>
+
+
+
+<!--
+<script>
+    const cer1= document.getElementById("cereal1");
+    function getdiet(){
+        const xhttp= new XMLHttpRequest();
+        xhttp.open("GET", "");
+
+        cer1.inner/HTML =
+    }
+</script>
+-->
