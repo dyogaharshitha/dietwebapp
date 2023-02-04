@@ -2,12 +2,12 @@ import pandas as pd
 import xldata
 #import setFoodlimit as fdlmt
 
-dishdf = xldata.xltodf(r"C:\Users\Harshitha\Desktop\python\diet\database\dishnutri.xlsx");
-dishmethusg = xldata.xltodf(r"C:\Users\Harshitha\Desktop\python\diet\database\dishmethod.xlsx");
-fooditemfrq = xldata.xltodf(r"C:\Users\Harshitha\Desktop\python\diet\database\foodnutri.xlsx");
-dishtype = xldata.xltodf(r"C:\Users\Harshitha\Desktop\python\diet\database\currytype.xlsx");
-nutridf = xldata.xltodf(r"C:\Users\Harshitha\Desktop\python\diet\database\nutrireq.xlsx");
-foodclassdf = xldata.xltodf(r"C:\Users\Harshitha\Desktop\python\diet\database\foodclass.xlsx");
+dishdf = xldata.xltodf("/static/dtabas/dishnutri.xlsx");
+dishmethusg = xldata.xltodf("/static/dtabas/dishmethod.xlsx");
+fooditemfrq = xldata.xltodf("/static/dtabas/foodnutri.xlsx");
+dishtype = xldata.xltodf("/static/dtabas/currytype.xlsx");
+nutridf = xldata.xltodf("/static/dtabas/nutrireq.xlsx");
+foodclassdf = xldata.xltodf("/static/dtabas/foodclass.xlsx");
 
 frqmeth = dishmethusg[dishmethusg['usage_frq'] > dishmethusg['max_times_per_week']].index.tolist();
 frqingri = fooditemfrq[fooditemfrq['usage_week_frq'] > fooditemfrq['max_week_frq']].index.tolist();
