@@ -2,12 +2,12 @@ import pandas as pd
 import xldata
 #import setFoodlimit as fdlmt
 
-dishdf = xldata.xltodf("/static/dtabas/dishnutri.xlsx");
-dishmethusg = xldata.xltodf("/static/dtabas/dishmethod.xlsx");
-fooditemfrq = xldata.xltodf("/static/dtabas/foodnutri.xlsx");
-dishtype = xldata.xltodf("/static/dtabas/currytype.xlsx");
-nutridf = xldata.xltodf("/static/dtabas/nutrireq.xlsx");
-foodclassdf = xldata.xltodf("/static/dtabas/foodclass.xlsx");
+dishdf = xldata.xltodf("static\dtabas\dishnutri.xlsx");
+dishmethusg = xldata.xltodf("static\dtabas\dishmethod.xlsx");
+fooditemfrq = xldata.xltodf("static\dtabas\foodnutri.xlsx");
+dishtype = xldata.xltodf("static\dtabas\currytype.xlsx");
+nutridf = xldata.xltodf("static\dtabas\nutrireq.xlsx");
+foodclassdf = xldata.xltodf("static\dtabas\foodclass.xlsx");
 
 frqmeth = dishmethusg[dishmethusg['usage_frq'] > dishmethusg['max_times_per_week']].index.tolist();
 frqingri = fooditemfrq[fooditemfrq['usage_week_frq'] > fooditemfrq['max_week_frq']].index.tolist();
